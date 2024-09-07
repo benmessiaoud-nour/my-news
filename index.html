@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>News</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top ">
+            <div class="container">
+                <a class="navbar-brand" href="#">MyNews</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Economics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Technology</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">sport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Computer</a>
+                        </li>
+
+                    </ul>
+                    <div class="login">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="login-container">
+                            <a href="./login.html">Login</a>
+                        </div>
+                    </div>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <a href="./search.html" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="header-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="carousel-news">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1">1</button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3">3</button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="article.html">
+                                            <img src="./images/picture-1.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-text">
+                                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="article.html">
+                                            <img src="./images/picture-2.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-text">
+                                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="article.html">
+                                            <img src="./images/picture-3.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-text">
+                                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="header-articles">
+                            <a href="article.html" class="article-link">
+                                <div class="row my-5">
+                                    <div class="col-5">
+                                        <img src="./images/picture-10.jpg" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="article-text">
+                                            <span class="article-category">
+                                                Technology
+                                            </span>
+                                            <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Adipisci dolor eius, dicta a harum labore.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="article.html" class="article-link">
+                                <div class="row mt-5">
+                                    <div class="col-5">
+                                        <img src="./images/picture-11.jpg" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="article-text">
+                                            <span class="article-category">
+                                                Technology
+                                            </span>
+                                            <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Adipisci dolor eius, dicta a harum labore.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="article.html" class="article-link">
+                                <div class="row mt-5">
+                                    <div class="col-5">
+                                        <img src="./images/picture-12.jpg" alt="">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="article-text">
+                                            <span class="article-category">
+                                                Technology
+                                            </span>
+                                            <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Adipisci dolor eius, dicta a harum labore.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="news">
+            <div class="container">
+                <div class="section-title mt-5">
+                    <h2> News</h2>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-2 mt-5">
+                            <a href="article.html" class="article-link ">
+
+                                <img src="./images/picture-10.jpg" alt="">
+
+
+                                <div class="article-text mt-3">
+                                    <span class="article-category">
+                                        Technology
+                                    </span>
+                                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.</h5>
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-2 mt-5">
+                            <a href="article.html" class="article-link ">
+
+                                <img src="./images/picture-11.jpg" alt="">
+
+
+                                <div class="article-text mt-3">
+                                    <span class="article-category">
+                                        News
+                                    </span>
+                                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.</h5>
+                                </div>
+
+
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-2 mt-5">
+                            <a href="article.html" class="article-link ">
+
+                                <img src="./images/picture-9.jpg" alt="">
+
+
+                                <div class="article-text mt-3">
+                                    <span class="article-category">
+                                        Sports
+                                    </span>
+                                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.</h5>
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-2 mt-5">
+                            <a href="article.html" class="article-link ">
+
+                                <img src="./images/picture-9.jpg" alt="">
+
+
+                                <div class="article-text mt-3">
+                                    <span class="article-category">
+                                        Technology
+                                    </span>
+                                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.</h5>
+                                </div>
+
+
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-2 mt-5">
+                            <a href="article.html" class="article-link ">
+
+                                <img src="./images/picture-8.jpg" alt="">
+
+
+                                <div class="article-text mt-3">
+                                    <span class="article-category">
+                                        Technology
+                                    </span>
+                                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.</h5>
+                                </div>
+
+
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-2 mt-5">
+                            <a href="article.html" class="article-link ">
+
+                                <img src="./images/picture-5.jpg" alt="">
+
+
+                                <div class="article-text mt-3">
+                                    <span class="article-category">
+                                        News
+                                    </span>
+                                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. </h5>
+                                </div>
+
+
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-2 mt-5">
+                            <a href="article.html" class="article-link ">
+
+                                <img src="./images/picture-4.jpg" alt="">
+
+
+                                <div class="article-text mt-3">
+                                    <span class="article-category">
+                                        Computer
+                                    </span>
+                                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. </h5>
+                                </div>
+
+
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-2 mt-5">
+                            <a href="article.html" class="article-link ">
+
+                                <img src="./images/picture-2.jpg" alt="">
+
+
+                                <div class="article-text mt-3">
+                                    <span class="article-category">
+                                        Technology
+                                    </span>
+                                    <h5 class="article-title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.</h5>
+                                </div>
+
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="#" class="btn button my-4">More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="most-read">
+            <div class="container">
+                <div class="section-title my-5">
+                    <h2>Most Read</h2>
+                    <div class="card-news">
+                        <a href="article.html">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/picture-11.jpg" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-text">
+                                        <h4>Lorem ipsum dolor sit amet</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis
+                                            deserunt eveniet adipisci quis sit? Eligendi nobis distinctio saepe! Totam,
+                                            mollitia assumenda quasi dicta esse neque quia repellendus! Laborum,
+                                            inventore consectetur voluptatem quaerat unde id, incidunt, recusandae
+                                            facilis qui aperiam culpa consequatur quo consequuntur? Nostrum voluptatem
+                                            odit alias ab saepe.</p>
+                                        <time datetime="2024-09-01"> September 1, 2024</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-news">
+                        <a href="article.html">
+                            <div class="card-image">
+                                <img src="./images/picture-12.jpg" alt="">
+                            </div>
+                            <div class="card-text">
+                                <h4>Lorem ipsum dolor sit</h4>
+                                <time datetime="2024-09-01">september 1, 2024</time>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-news">
+                        <a href="article.html">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="./images/picture-12.jpg" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-text">
+                                        <h4>Lorem ipsum dolor sit amet</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis
+                                            deserunt eveniet adipisci quis sit? Eligendi nobis distinctio saepe! Totam,
+                                            mollitia assumenda quasi dicta esse neque quia repellendus! Laborum,
+                                            inventore consectetur voluptatem quaerat unde id, incidunt, recusandae
+                                            facilis qui aperiam culpa consequatur quo consequuntur? Nostrum voluptatem
+                                            odit alias ab saepe.</p>
+                                        <time datetime="2024-09-01"> September 1, 2024</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Reviews</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="article.html">
+                            <div class="reviews-card">
+                                <h5>Lorem, ipsum dolor sitelit.</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_1.jpg" alt="">
+                                    <span>nora lora</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="article.html">
+                            <div class="reviews-card">
+                                <h5>Lorem, ipsum dolor sitelit.</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_1.jpg" alt="">
+                                    <span>nora lora</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="article.html">
+                            <div class="reviews-card">
+                                <h5>Lorem, ipsum dolor sitelit.</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_1.jpg" alt="">
+                                    <span>nora lora</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="article.html">
+                            <div class="reviews-card">
+                                <h5>Lorem, ipsum dolor sitelit.</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_1.jpg" alt="">
+                                    <span>nora lora</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="article.html">
+                            <div class="reviews-card">
+                                <h5>Lorem, ipsum dolor sitelit.</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_1.jpg" alt="">
+                                    <span>nora lora</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="article.html">
+                            <div class="reviews-card">
+                                <h5>Lorem, ipsum dolor sitelit.</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_1.jpg" alt="">
+                                    <span>nora lora</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="article.html">
+                            <div class="reviews-card">
+                                <h5>Lorem, ipsum dolor sitelit.</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_1.jpg" alt="">
+                                    <span>nora lora</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a href="article.html">
+                            <div class="reviews-card">
+                                <h5>Lorem, ipsum dolor sitelit.</h5>
+                                <div class="user-info">
+                                    <img src="./images/user_img/user_1.jpg" alt="">
+                                    <span>nora lora</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="videos">
+            <div class="container">
+                <h2 class="section-title">
+                    Video
+                </h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="images/picture-6.jpg" alt="">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">Lorem ipsum dolor site lit.</h5>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="images/picture-7.jpg" alt="">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">Lorem ipsum dolor site lit.</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="images/picture-8.jpg" alt="">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">Lorem ipsum dolor site lit.</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="images/picture-9.jpg" alt="">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">Lorem ipsum dolor site lit.</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="images/picture-10.jpg" alt="">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">Lorem ipsum dolor site lit.</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="article.html" class="article-link">
+                                <div class="slide-img">
+                                    <img src="images/picture-11.jpg" alt="">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="slide-text">
+                                    <h5 class="article-title">Lorem ipsum dolor site lit.</h5>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="latest-news">
+            <div class="container">
+                <h2 class="section-title my-5">
+                    Latest News
+                </h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="article.html" class="article-link">
+                            <img src="images/picture-12.jpg" alt="">
+                            <div class="article-text mt-3">
+                                <span class="article-category">News</span>
+                                <h5 class="article-title">Lorem ipsum dolor sitelit.</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et suscipit dicta eligendi
+                                    quo
+                                    libero ad laboriosam, culpa distinctio ratione possimus.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a href="article.html" class="article-link">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="images/picture-5.jpg" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="article-text mt-3">
+                                        <span class="article-category">News</span>
+                                        <h5 class="article-title">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Magni fuga</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </a>
+                        <div class="row mt-3">
+                            <div class="col-sm-6">
+                                <a href="article.html" class="article-link">
+                                    <img src="images/picture-8.jpg" alt="">
+                                    <div class="article-text mt-3">
+                                        <span class="article-category">News</span>
+                                        <h5 class="article-title">Lorem ipsum dolor sit amet Vero saepe voluptatibus ex
+                                            ullam.</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="article.html" class="article-link">
+                                    <img src="images/picture-10.jpg" alt="">
+                                    <div class="article-text mt-3">
+                                        <span class="article-category">News</span>
+                                        <h5 class="article-title">Lorem ipsum dolor sit amet Vero saepe voluptatibus ex
+                                            ullam.</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="article.html" class="btn button">More</a>
+                </div>
+                <hr class="mt-5">
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <div class="footer-title">
+                    <h2>About</h2>
+                  </div>
+                    <ul class="unstyled-list">
+                        <li><a href="#">About </a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Politics and Privacy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-title">
+                        <h2>Contact us</h2>
+                      </div>
+                    <ul class="unstyled-list">
+                        <li><a href="#">Contact us </a></li>
+                        <li><a href="#">Advertise with us</a></li>
+                        <li><a href="#">Vacancies</a></li>
+                        <li><a href="#">Press releases</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-title">
+                        <h2>Connecting</h2>
+                      </div>
+                   
+                    <ul class="unstyled-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Algeria,Mila
+                        </li>
+                        <li> <i class="fa-solid fa-phone"></i>
+                            0319999
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            example@.com
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-title">
+                        <h2>Follow Us</h2>
+                      </div>
+                    <ul class="social-media">
+                        <li class="social-media-icon"><a href="#">
+                                <img src="images/social_media/Facebook.png" alt="">
+                            </a></li>
+                        <li class="social-media-icon"><a href="#">
+                                <img src="images/social_media/Instagram.png" alt="">
+                            </a></li>
+                        <li class="social-media-icon"><a href="#">
+                                <img src="images/social_media/Twitter.png" alt="">
+                            </a></li>
+                    </ul>
+                        <div class="footer-brand text-center pt-3 ">
+                            <a href="index.html">MyNews</a>
+                        </div>
+                    
+                            <p class="copyright text-center mt-3">All Rights Reserved.© <span id="year"></span></p> 
+                        
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
