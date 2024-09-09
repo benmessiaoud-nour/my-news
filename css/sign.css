@@ -1,0 +1,36 @@
+form .button {
+  background-color: #ffffff;
+  color: #B80000;
+  border: 1px solid #B80000;
+  padding: 2px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 20px;
+}
+form .button:hover {
+  background-color: #B80000;
+  color: #ffffff;
+}
+
+a {
+  color: #B80000;
+}
+
+.social-media-form .button-login {
+  color: #B80000;
+  margin-right: 10px;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+.social-media-form .button-login:hover {
+  color: rgba(184, 0, 0, 0.5);
+}
+
+@media (max-width: 992px) {
+  body main .py-5 {
+    height: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=sign.css.map */

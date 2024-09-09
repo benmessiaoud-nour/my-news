@@ -2,10 +2,12 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Almarai", sans-serif !important;
+  overflow-x: hidden;
 }
 
 img {
@@ -51,6 +53,9 @@ header .navbar {
   padding: 10px;
   border-bottom: 1px solid #B1AEAE;
   background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 header .navbar-brand {
   color: #B80000;
@@ -119,6 +124,24 @@ header .navbar .login:hover .login-container {
 }
 header .navbar .login:hover .login-container a {
   visibility: visible;
+}
+header .navbar .login-button .button {
+  background-color: #B80000;
+  color: #ffffff;
+  border: 1px solid #B80000;
+  padding: 2px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 20px;
+  width: 50%;
+  margin: 15px auto;
+  text-align: center;
+  display: none;
+}
+header .navbar .login-button .button:hover {
+  background-color: #ffffff;
+  color: #B80000;
 }
 header .navbar form .search-icon {
   font-size: 25px;
@@ -412,6 +435,134 @@ footer .footer-brand a {
   margin: auto;
   color: #B80000;
   text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+  header .header-news .carousel-item h3 {
+    font-size: 18px;
+  }
+  header .header-news .carousel-item h3::after {
+    right: 260px;
+  }
+  header .header-news .carousel-indicators {
+    right: -500px;
+  }
+  .article-title {
+    font-size: 18px;
+  }
+  .article-category {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  header .header-news .carousel-item h3::after {
+    right: 295px;
+  }
+  header .header-news .carousel-indicators {
+    right: -445px;
+  }
+  header .header-news .carousel-news::after {
+    height: 140px;
+    top: 100px;
+  }
+  section.news .article-link img {
+    max-height: 120px;
+  }
+  section.news .article-link .article-text h5 {
+    font-size: 13px;
+  }
+  section.most-read .card-text h4 {
+    font-size: 22px;
+  }
+  section.reviews .reviews-card {
+    padding: 15px 7px;
+  }
+  section.reviews .user-info img {
+    width: 85px;
+  }
+  .article-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  header .header-news .carousel-item h3::after {
+    display: none;
+  }
+  header .header-news .carousel-indicators {
+    right: 0;
+  }
+  header .navbar .login {
+    display: none;
+  }
+  header .navbar .login-button .button {
+    display: block;
+  }
+  section.most-read .card-news {
+    padding: 25px;
+  }
+  section.most-read .card-text h4 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  section.most-read .card-text p {
+    font-size: 12px;
+    margin: 25px auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  section.most-read .card-text time {
+    font-size: 12px;
+  }
+  section.most-read .card-img::after {
+    height: 20px;
+    bottom: -10px;
+  }
+  section.latest-news .article-title {
+    font-size: 14px;
+  }
+  section.latest-news .article-category {
+    font-size: 12px;
+  }
+  section.latest-news p {
+    font-size: 14px;
+  }
+  .article-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  header .header-news .carousel-news::after {
+    display: none;
+  }
+  section.news .article-link img {
+    max-height: 300px;
+  }
+  section.news .article-link .article-text h5 {
+    font-size: 20px;
+  }
+  section.most-read .card-news {
+    padding: 15px;
+  }
+  section.most-read .card-image::after {
+    display: none;
+  }
+  section.videos .swiper .swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .footer-title h2 {
+    color: #B80000;
+    margin-top: 20px;
+  }
+  footer .footer-title h2::after {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
